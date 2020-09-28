@@ -8,7 +8,7 @@ https://engineering.giphy.com/how-to-make-gifs-with-ffmpeg/
 ### Convert mp4 to gif
 
 ```shell
-ffmpeg -i generated_2.mp4 -vf "flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 ben.gif
+ffmpeg -i generated_2.mp4 -vf "split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 ben.gif
 ```
 
 ### Trim
